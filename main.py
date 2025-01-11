@@ -33,3 +33,12 @@ async def get_users():
     Read user data from json file
     """
     return services.read_usersdata()
+
+
+
+@app.get("/Test", response_model=UserListOut)
+async def get_users():
+    """
+    Read user data from json file
+    """
+    return services.read_usersdata()
